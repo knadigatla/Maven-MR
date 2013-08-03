@@ -20,6 +20,7 @@ public class WCReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
 			throws IOException, InterruptedException {
 		int sum=0;
 		
+		
 		for(IntWritable val:valList) {
 			sum += val.get();
 		}

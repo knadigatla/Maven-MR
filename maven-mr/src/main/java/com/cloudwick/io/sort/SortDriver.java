@@ -36,6 +36,7 @@ public class SortDriver extends Configured implements Tool {
 		
 		job.setMapOutputKeyClass(IntWritable.class);
 		job.setMapOutputValueClass(Text.class);
+	
 		
 		job.setOutputKeyClass(IntWritable.class);
 		job.setOutputValueClass(Text.class);
@@ -43,6 +44,8 @@ public class SortDriver extends Configured implements Tool {
 		job.setInputFormatClass(TextInputFormat.class);
 //		job.setOutputFormatClass(TextOutputFormat.class);
 		job.setOutputFormatClass(SequenceFileOutputFormat.class);
+		
+		
 		
 		if(job.waitForCompletion(true)) {
 			return 0;
