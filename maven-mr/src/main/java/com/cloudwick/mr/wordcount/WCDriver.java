@@ -32,6 +32,7 @@ public class WCDriver extends Configured implements Tool {
 		
 		job.setMapperClass(WCMapper.class);
 		job.setReducerClass(WCReducer.class);
+		job.setCombinerClass(WCReducer.class);
 		
 		job.setMapOutputKeyClass(Text.class);
 		job.setMapOutputValueClass(IntWritable.class);
