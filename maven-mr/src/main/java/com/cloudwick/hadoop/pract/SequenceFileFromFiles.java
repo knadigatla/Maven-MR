@@ -31,14 +31,7 @@ public class SequenceFileFromFiles {
     private File outputFile;
     private LocalSetup setup;
 
-    /** Sets up Configuration and LocalFileSystem instances for
-     * Hadoop.  Throws Exception if they fail.  Does not load any
-     * Hadoop XML configuration files, just sets the minimum
-     * configuration necessary to use the local file system.
-     */
-//    public TarToSeqFile() throws Exception {
-//        setup = new LocalSetup();
-//    }
+    
 
     /** Sets the input tar file. */
     public void setInput(File inputFile) {
